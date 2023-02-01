@@ -1,0 +1,294 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+tp2-1
+</name>
+</assembly>
+<members>
+<member name="T:tp2_1.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:tp2_1.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:tp2_1.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:tp2_1.DS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:tp2_1.DS.T_etudiantsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:tp2_1.DS.T_programmeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:tp2_1.DS.T_etudiantsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:tp2_1.DS.T_programmeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:tp2_1.DS.T_etudiantsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:tp2_1.DS.T_programmeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:tp2_1.dsRapEtuProg">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:tp2_1.dsRapEtuProg.T_etudiantsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:tp2_1.dsRapEtuProg.T_etudiantsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:tp2_1.dsRapEtuProg.T_etudiantsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:tp2_1.dsRapport">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:tp2_1.dsRapport.T_programmeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:tp2_1.dsRapport.T_etudiantsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:tp2_1.dsRapport.T_programmeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:tp2_1.dsRapport.T_etudiantsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:tp2_1.dsRapport.T_programmeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:tp2_1.dsRapport.T_etudiantsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:tp2_1.FrmGestion">
+ <summary>
+ Le formulaire principal permet d’appeler les différents écrans de l’application. Cette fenêtre MDI s’assure de ne jamais ouvrir plusieurs fois la même fenêtre      Enfant.
+ 
+ Fait par: Marierlin Higuerey
+ le:
+ modifie le:
+ </summary>
+</member>
+<member name="M:tp2_1.FrmGestion.mnuProgramme_Click(System.Object,System.EventArgs)">
+ <summary>
+ Procedure permettant d'ouvrir fenêtre enfant Programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.FrmGestion.mnuEtudiants_Click(System.Object,System.EventArgs)">
+ <summary>
+ Procedure permettant d'ouvrir fenêtre enfant Étudiants
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.FrmGestion.mnuQuitter_Click(System.Object,System.EventArgs)">
+ <summary>
+ Validation pour quitter du programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:tp2_1.frmEtudiants">
+ <summary>
+ Cette fenêtre enfant permettra de gérer l’inscription, la modification, la consultation et la destruction d’étudiants.
+ 
+ Fait par: Marierlin Higuerey
+ le:
+ modifie le:
+ </summary>
+</member>
+<member name="M:tp2_1.frmEtudiants.cmdNouveau_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton pour ajout étudiant
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmEtudiants.cmdAnnuler_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton annuler l'action
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmEtudiants.cmdModifier_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton modifie l'étudiant
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmEtudiants.cmdOK_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton pour faire l'ajout ou la modification...
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmEtudiants.Valider_Formulaire_Etu">
+ <summary>
+ Fonction permettant de valider le Formulaire des étudiants
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:tp2_1.frmEtudiants.Existe_deja(System.String)">
+ <summary>
+ Fonction permettant de vérifier si le DA exite déjà
+ </summary>
+</member>
+<member name="M:tp2_1.frmEtudiants.optEtu_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Funtion pour afficher le sexe aprés l'ajoute ou modifié
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmEtudiants.cmdEnlever_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton pour enlever un étudiant...
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmEtudiants.Validation_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Validation des entrées dans le formulaire
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmEtudiants.Validation_Adresse_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Validation des entrées dans le formulaire
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmProg.cmdNouveau_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton pour ajout Programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmProg.cmdEnlever_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton pour Enlever le programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmProg.cmdAnnuler_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton annuler l'action
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmProg.cmdModifier_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton modifie le programme
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmProg.cmdOK_Click(System.Object,System.EventArgs)">
+ <summary>
+ Botton pour faire l'ajout ou la modification...
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:tp2_1.frmProg.Valider_Formulaire_Prog">
+ <summary>
+ Fonction permettant de valider le Formulaire des programmes
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:tp2_1.frmProg.Existe_deja(System.String)">
+ <summary>
+ Fonction permettant de vérifier si le no programme existe déjà
+ </summary>
+</member>
+<member name="M:tp2_1.frmProg.Validation_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Validation des entrées dans le formulaire
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:tp2_1.Module1">
+ <summary>
+ Module permettant de gerer code réutilisable.
+ 
+ Fait par: Marierlin Higuerey
+ le:
+ modifie le:
+ </summary>
+</member>
+<member name="M:tp2_1.Module1.Barrer(System.Windows.Forms.Control[])">
+ <summary>
+ Procedure permettant de Barrer
+ </summary>
+</member>
+<member name="M:tp2_1.Module1.DeBarrer(System.Windows.Forms.Control[])">
+ <summary>
+ Procedure permettant de DeBarrer
+ </summary>
+</member>
+</members>
+</doc>
